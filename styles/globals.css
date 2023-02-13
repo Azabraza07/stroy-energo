@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer components {
+  .myBtn {
+    background-color: #d80027;
+    padding: 25px 76px 25px 27px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+  .myBtn::after {
+    content: "";
+    position: absolute;
+    background-image: url(../public/main/Arrow\ -\ Right.svg);
+    width: 37px;
+    height: 24px;
+    margin-left: 14px;
+  }
+}
+
+@layer utilities {
+  .container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .mainBg {
+    background-image: url(../public/main/main-bg.png);
+    height: 720px;
+  }
+  .aboutHeaderBg {
+    background-image: url(../public/about/about-header-bg.png);
+    height: 320px;
+  }
+  .aboutBg {
+    background-image: url(../public/main/aboutCompany-bg.png);
+  }
+  .advantagesBg {
+    background-image: url(../public/main/advantages-bg.png);
+  }
+
+  .equipmentBg{
+    background-image: url(../public/equipment/equipmen-bg.png);
+    height: 320px;
+  }
+ 
+  .servicesBgAcceptance {
+    background-image: url(../public/services/acceptance.png);
+    height: 720px;
+  }
+  .servicesBgDiamond {
+    background-image: url(../public/services/diamond-drilling.png);
+    height: 720px;
+
+  }
+  .servicesBgFinish {
+    background-image: url(../public/services/repair-finish-work.png);
+    height: 720px;
+
+  }
+  .servicesBgMeasurment {
+    background-image: url(../public/services/technical-measurement.png);
+    height: 720px;
+
+  }
+  .servicesBgArchitect {
+    background-image: url(../public/services/architect.png);
+    height: 720px;
+
+  }
+
+  .bgSettings {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .mainTitle {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 170.9%;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .sectionTitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #464a50;
+  }
+}
